@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header h1 {
+            position: absolute;
+            top: 10%;
+            color: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        header {
+            height: 300px;
+            background-color: #3CB371;
+            width: 100%;
+        }
+
+        .caja1, .caja2, .caja3 {
+            height: 200px;
+            display: block;
+            float: left;
+        }
+
+        .caja1 {
+            width: 15%;
+            background-color: #F9D200;
+        }
+
+        .caja2 {
+            width: 60%;
+            height: 270px;
+            background-color: #FEF7DB;
+        }
+
+        .caja3 {
+            width: 25%;
+            background-color: #FEE3B4;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+            height: 30px;
+            background-color: #09A3B8;
+            color: black;
+            text-align: center;
+            padding: 50px;
+            font-size: 23px;
+        }
+
+        @media (max-width: 600px) {
+            header, .caja1, .caja2, .caja3 {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>El Sistema Esqueletico</h1>
+</header>
+<div class="contenedor">
+    <div class="caja1">
+        <a href="#">Tipos de Huesos</a><br/>
+        <a href="#">Articulaciones</a><br/>
+        <a href="#">Esqueleto</a><br/>
+    </div>
+    <div class="caja2">
+        <h1>Huesos</h1><br/>
+        <p>Los huesos bla bla bla</p><br/>
+        <p>A pesar de ...</p>
+    </div>
+    <div class="caja3">
+        <h1>Hay 3 tipos de huesos:</h1><br/>
+        <ul>
+            <li>Huesos cortos: vértebras</li>
+            <li>Huesos planos: cráneo</li>
+            <li>Huesos largos: extremidades</li>
+        </ul>
+    </div>
+</div>
+<footer>
+    <p>Nuestro cuerpo en movimiento</p>
+</footer>
+
+</body>
+</html>
